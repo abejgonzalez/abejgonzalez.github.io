@@ -1,5 +1,5 @@
 @supports (display: grid) {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 800px) {
 
         .site {
             display: grid;
@@ -39,7 +39,7 @@
         }
     }
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1200px) {
         .site {
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-areas:
