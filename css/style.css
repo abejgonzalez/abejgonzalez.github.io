@@ -38,18 +38,6 @@
             grid-area: footer;
         }
     }
-
-    @media screen and (min-width: 1200px) {
-        .site {
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas:
-                "header"
-                "about"
-                "files"
-                "education"
-                "projects"
-                "footer";
-        }
 }
 
 
