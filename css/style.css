@@ -1,5 +1,5 @@
 @supports (display: grid) {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 500px) {
 
         .site {
             display: grid;
