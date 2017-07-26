@@ -1,12 +1,11 @@
 @supports (display: grid) {
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 800px) {
 
         .site {
             display: grid;
-            grid-template-columns: 1fr 1fr 1 fr;
+            grid-template-columns: 2fr 3fr 3fr;
             grid-template-rows: 3fr 3fr 1fr;
             grid-gap: 20px;
-            background-color: #fff;
 
             grid-template-areas:
                 "header about files"
@@ -38,18 +37,96 @@
             grid-area: footer;
         }
     }
+
+    @media only screen and (max-width: 500px) {
+
+        .site {
+            width: 100%;
+            margin: 0 auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6,1fr);
+            grid-gap: 20px;
+
+            grid-template-areas:
+                "header"
+                "about"
+                "files"
+                "education"
+                "projects"
+                "footer";
+        }
+    }
 }
 
+body {
+    background-color: #F7F9F9;
+    margin: 40px;
+    font-family: 'Rajdhani', sans-serif;
+}
 
-.container div {
+.site > div {
     border-radius: 3px;
-    padding: 0.2em;
-    background-color: #EAF0CE;
+    padding: 10px;
+    background-color: #EFEFEF;
     text-align: center;
+    border: 5px solid #A9A9A9;
+}
+
+.header {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.header_content {
+    position: absolute;
+    width: 90%;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .image_container {
     border-radius: 50%;
+    border: 15px solid #948B89;
     margin-top: 30px;
+}
+
+.about {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.about_content {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.files {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.files_content {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.files_content a {
+    background-image: url(../images/abrahamg.png);
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+    padding-top: 10px;
 }
 
