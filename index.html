@@ -30,16 +30,16 @@
 							<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item active">
-							<a class="nav-link" href="#">About Me</a>
+							<a class="nav-link" href="#aboutme">About Me</a>
 						</li>
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Projects</a>
+							<a class="nav-link" href="#projects">Projects</a>
 						</li>
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Downloads</a>
+							<a class="nav-link" href="#downloads">Downloads</a>
 						</li>
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Contact</a>
+							<a class="nav-link" href="#contact">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -48,26 +48,37 @@
 
 		<main role="main">
 
+		<div class="container">
 			<!-- Home section -->
-			<img src="images/abrahamg.png" class="rounded" alt="Picture of me">
-			<h1 class="style-heading">Abraham Gonzalez</h1>
-			<p class="lead">Hi everyone! Welcome to my web page!</p>
-			<p class="lead">
-			<a href="https://www.linkedin.com/in/abraham-j-gonzalez/" > <img src="images/In-2CRev-66px-R.png" /></a>
-			<a href="https://github.com/abejgonzalez"><img src="images/GitHub-Mark-64px.png" /></a>
+			<div id="home" class="home row">
+				<div class="col-lg-4">
+					<h1 class="style-heading">Abraham Gonzalez</h1>
+					<p class="lead">Hi everyone! Welcome to my web page!</p>
+					<p class="lead">
+					<a href="https://www.linkedin.com/in/abraham-j-gonzalez/" > <img src="images/In-2CRev-66px-R.png" /></a>
+					<a href="https://github.com/abejgonzalez"><img src="images/GitHub-Mark-64px.png" /></a>
+				</div>
+			</div>
 
-			<hr class="featurette-divider">
+			<hr id="aboutme" class="featurette-divider">
 
 			<!-- About Me section -->
 			<div class="row">
 				<div class="col-lg-4">
-					<img class="rounded-circle" src="images/abrahamg.png" alt="Picture of me" width="140" height="140">
-					<h2>About Me</h2>
-					<p>I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation. Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their captivity. But one hundred years later, the Negro still is not free; one hundred years later, the life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination; one hundred years later, the Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity; one hundred years later, the Negro is still languished in the corners of American society and finds himself in exile in his own land. So we’ve come here today to dramatize a shameful condition. In a sense we’ve come to our nation’s capital to cash a check. When the architects of our republic wrote the magnificent words of the Constitution and the Declaration of Independence, they were signing a promissory note to which every American was to fall heir. This note was the promise that all men, yes, black men as well as white men, would be guaranteed the unalienable rights of life, liberty, and the pursuit of happiness. </p>
+					<img class="img-responsive rounded-circle img-thumbnail" src="images/fullfrontal.jpg" alt="Picture of me" width="240" height="240">
+					<h2 class="title-below-img">About Me</h2>
+					<p>
+					Hello, everyone! My name is Abraham Gonzalez and I am a incoming first year Electrical Engineering and
+					Computer Science Ph.D. student at the University of California at Berkeley joining the 
+					<a href="https://adept.eecs.berkeley.edu/">ADEPT</a> lab under <a href="http://people.eecs.berkeley.edu/~krste/">Dr. Krste Asanovic</a>. I am a highly motivated
+					individual, passionate on learning more about computer architecture and completing tasks to their 
+					fullest potentials. Eager to tackle unsolved problems, I strive to make a large imprint on innovation
+					one step at a time.
+					</p>
 				</div><!-- /.col-lg-4 -->
 			</div><!-- /.row --> 
 
-			<hr class="featurette-divider">
+			<hr id="projects" class="featurette-divider">
 
 			<!-- Projects section -->
 			<div class="row">
@@ -78,35 +89,64 @@
 				</div><!-- /.col-lg-4 -->
 			</div><!-- /.row --> 
 
-			<hr class="featurette-divider">
+			<hr id="downloads" class="featurette-divider">
 
 			<!-- Downloads section -->
-			<div class="row">
-				<div class="col-lg-4">
-					<img class="rounded-circle" src="images/abrahamg.png" alt="Picture of me" width="140" height="140">
-					<h2>About Me</h2>
-					<p>I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation. Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their captivity. But one hundred years later, the Negro still is not free; one hundred years later, the life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination; one hundred years later, the Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity; one hundred years later, the Negro is still languished in the corners of American society and finds himself in exile in his own land. So we’ve come here today to dramatize a shameful condition. In a sense we’ve come to our nation’s capital to cash a check. When the architects of our republic wrote the magnificent words of the Constitution and the Declaration of Independence, they were signing a promissory note to which every American was to fall heir. This note was the promise that all men, yes, black men as well as white men, would be guaranteed the unalienable rights of life, liberty, and the pursuit of happiness. </p>
-				</div><!-- /.col-lg-4 -->
-			</div><!-- /.row --> 
 
-			<hr class="featurette-divider">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+                        <div class="image-wrapper">
+                            <a href="#"><img class="first-slide single-inner" src="images/single-doc.png" alt="First slide"></a>
+                        </div>
+						<div class="container caption-wrapper">
+							<div class="carousel-caption">
+								<h1>Resume</h1>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+                        <div class="image-wrapper">
+                            <a href="#"><img class="second-slide multi-inner" src="images/multi-doc.png" alt="Second slide"></a>
+                        </div>
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>Curriculum Vitae</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+			<hr id="contact" class="featurette-divider">
 
 			<!-- Contact section -->
 			<div class="row">
 				<div class="col-lg-4">
-					<img class="rounded-circle" src="images/abrahamg.png" alt="Picture of me" width="140" height="140">
-					<h2>About Me</h2>
-					<p>I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation. Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their captivity. But one hundred years later, the Negro still is not free; one hundred years later, the life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination; one hundred years later, the Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity; one hundred years later, the Negro is still languished in the corners of American society and finds himself in exile in his own land. So we’ve come here today to dramatize a shameful condition. In a sense we’ve come to our nation’s capital to cash a check. When the architects of our republic wrote the magnificent words of the Constitution and the Declaration of Independence, they were signing a promissory note to which every American was to fall heir. This note was the promise that all men, yes, black men as well as white men, would be guaranteed the unalienable rights of life, liberty, and the pursuit of happiness. </p>
+					<h2>Contact</h2>
+					<p>Email: <a href="mailto:abe.j.gonza@gmail.com">abe.j.gonza@gmail.com</a></p>
+					<p>Phone Number: (915)-545-3405</p>
 				</div><!-- /.col-lg-4 -->
 			</div><!-- /.row --> 
 
-
 			<hr class="featurette-divider">
 
-			</p>
+		</div>
 		</main>
 
-		<footer class="mastfoot bg-dark nav-bar-expand-md mt-auto">
+		<footer>
 			<div class="inner">
 				<p>Created by Abraham Gonzalez using <a href="https://getbootstrap.com/">Bootstrap</a></p>
 			</div>
