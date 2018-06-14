@@ -11,7 +11,6 @@
 
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -29,16 +28,10 @@
                             <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#aboutme">About Me</a>
-                        </li>
-                        <li class="nav-item active">
                             <a class="nav-link" href="#experience">Experience</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#downloads">Downloads</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -47,38 +40,40 @@
 
         <main role="main">
 
-        <div class="container">
+        <div class="container-fluid home-expanse">
             <!-- Home section -->
+            <div class="container">
             <div id="home" class="home row">
                 <div class="col-lg-12">
-                    <h1 class="style-heading">Abraham Gonzalez</h1>
-                    <p class="lead">Hi everyone! Welcome to my web page!</p>
                     <p class="lead">
+                    <img class="img-responsive rounded-circle img-thumbnail border-color" src="images/fullfrontal.jpg" alt="Picture of me" width="280" height="280">
+                    <h1 class="title-below-img style-heading">Abraham Gonzalez</h1>
+                    <p>
+                    Hello, everyone! My name is Abraham Gonzalez and I am a incoming first year Electrical Engineering and
+                    Computer Science Ph.D. student at the University of California at Berkeley joining the 
+                    <a href="https://adept.eecs.berkeley.edu/">ADEPT</a> lab under <a href="http://people.eecs.berkeley.edu/~krste/">Dr. Krste Asanovic</a>. I am a highly motivated
+                    individual, passionate on learning more about computer microarchitecture and datacenter computing. I hope to make future computing faster, more efficient, and more available
+                    to all.
+                    </p>
+
+                    <h3 class="slight-padding">Contact</h3>
+                    <p>
+                    Email: <a href="mailto:abe.j.gonza@gmail.com">abe.j.gonza@gmail.com</a>
+                    <br>Phone Number: (915)-545-3405
+                    </p>
+
                     <a href="https://www.linkedin.com/in/abraham-j-gonzalez/" > <img src="images/linkedin_logo_66.png" /></a>
                     <a href="https://github.com/abejgonzalez"><img src="images/github_logo_64.png" /></a>
                 </div>
             </div>
-
-            <hr id="aboutme" class="featurette-divider">
-            <h2 >About Me</h2>
-            <hr class="featurette-divider">
-
-            <!-- About Me section -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive rounded-circle img-thumbnail" src="images/fullfrontal.jpg" alt="Picture of me" width="240" height="240">
-                    <p class="title-below-img">
-                    Hello, everyone! My name is Abraham Gonzalez and I am a incoming first year Electrical Engineering and
-                    Computer Science Ph.D. student at the University of California at Berkeley joining the 
-                    <a href="https://adept.eecs.berkeley.edu/">ADEPT</a> lab under <a href="http://people.eecs.berkeley.edu/~krste/">Dr. Krste Asanovic</a>. I am a highly motivated
-                    individual, passionate on learning more about computer architecture and completing tasks to their 
-                    fullest potentials. Eager to tackle unsolved problems, I strive to make a large imprint on innovation
-                    one step at a time.
-                    </p>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row --> 
+            </div>
 
             <hr id="experience" class="featurette-divider">
+        </div>
+
+        <div class="container-fluid">
+
+
             <h2>Experience</h2>
             <hr class="featurette-divider">
 
@@ -173,55 +168,16 @@
             <hr class="featurette-divider">
 
             <!-- Downloads section -->
-
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="image-wrapper">
-                            <a href="documents/Abraham Gonzalez Resume.pdf"><img class="first-slide single-inner" src="images/single-doc.png" alt="First slide"></a>
-                        </div>
-                        <div class="container caption-wrapper">
-                            <div class="carousel-caption">
-                                <h1>Resume</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="image-wrapper">
-                            <a href="documents/Abraham Gonzalez CV.pdf"><img class="second-slide multi-inner" src="images/multi-doc.png" alt="Second slide"></a>
-                        </div>
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Curriculum Vitae</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-
-            <hr id="contact" class="featurette-divider">
-            <h2>Contact</h2>
-            <hr id="contact" class="featurette-divider">
-
-            <!-- Contact section -->
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Email: <a href="mailto:abe.j.gonza@gmail.com">abe.j.gonza@gmail.com</a></p>
-                    <p>Phone Number: (915)-545-3405</p>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row --> 
+                <div class="col-lg-6">
+                    <a href="documents/Abraham Gonzalez Resume.pdf"><img class="rounded-circle" src="images/single-doc.png" alt="Resume" width="160" height="160"></a>
+                    <h3 class="slight-padding">Resume</h3>
+                </div><!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                    <a href="documents/Abraham Gonzalez CV.pdf"><img class="rounded-circle" src="images/multi-doc.png" alt="CV" width="160" height="160"></a>
+                    <h3 class="slight-padding">Curriculum Vitae</h3>
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
 
             <hr class="featurette-divider">
 
@@ -230,7 +186,7 @@
 
         <footer>
             <div class="inner">
-                <p>Created by Abraham Gonzalez using <a href="https://getbootstrap.com/">Bootstrap</a></p>
+                <p> Website is a work in progress! </p>
             </div>
         </footer>
 

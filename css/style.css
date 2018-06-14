@@ -104,8 +104,23 @@ body {
     padding-top: 5rem;
 }
 
+.home-expanse {
+    background-color: #dcdcdc;
+    height: 100%;
+}
+
+.border-color {
+    border-color: #2f4f4f;
+}
+
 .title-below-img{
     padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.slight-padding{
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
 }
 
 a {
