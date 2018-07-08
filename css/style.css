@@ -105,7 +105,7 @@ body {
 }
 
 .home-expanse {
-    background-color: #dcdcdc;
+    background-color: #dcdcdc; 
     height: 100%;
 }
 
@@ -119,7 +119,7 @@ body {
 }
 
 .slight-padding{
-    padding-top: 0.5rem;
+    padding-top: 1.5rem;
     padding-bottom: 0.2rem;
 }
 
@@ -133,9 +133,19 @@ a:hover {
 
 /* Featurettes
 ------------------------- */
+.title-margin {
+    margin-top: 3rem;
+}
+
+.main-divider {
+    margin-top: 3rem;
+    margin-bottom: 0em;
+    border-width: 2px;
+}
 
 .featurette-divider {
   margin: 3rem 0; /* Space out the Bootstrap <hr> more */
+  border-width: 2px;
 }
 
 /* Thin out the marketing headings */
@@ -145,6 +155,16 @@ a:hover {
   letter-spacing: -.05rem;
 }
 
+.img-align{
+    vertical-align: middle;
+    width: 70%;
+}
+
+.img-align-smaller{
+    vertical-align: middle;
+    width: 40%;
+}
+
 .base{
     height: 100%;
     display: table-cell;
@@ -152,6 +172,16 @@ a:hover {
     text-align: center;
     width: 300px;
     vertical-align: middle;
+}
+
+.vcenter {
+    /*
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    */
+    display: flex;
+    align-items: center;
 }
 
 .col-md-7 {
