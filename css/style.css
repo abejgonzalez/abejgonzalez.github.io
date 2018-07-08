@@ -120,7 +120,7 @@ body {
 
 .slight-padding{
     padding-top: 1.5rem;
-    padding-bottom: 0.2rem;
+    padding-bottom: 1.5rem;
 }
 
 a {
@@ -162,7 +162,7 @@ a:hover {
 
 .img-align-smaller{
     vertical-align: middle;
-    width: 40%;
+    width: 28%;
 }
 
 .base{
