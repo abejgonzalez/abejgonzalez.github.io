@@ -223,7 +223,7 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 7B. DOCUMNETATION SECTION
 --------------------------------- */
 
-/*.documentation-section{ background: #003262; color: #fff; }*/
+.documentation-section{ background: #003262; color: #fff; }
 
 .document .list > li{ display: block; position: relative; margin-bottom: 10px; padding-left: 20px; }
 
@@ -286,5 +286,5 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 10. FOOTER
 --------------------------------- */
 
-.copyright{ text-align: center; padding: 30px 0; background: #003262; }
+.copyright{ text-align: center; padding: 30px 0; background: #ffffff; }
 
