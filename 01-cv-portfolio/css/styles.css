@@ -293,6 +293,7 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 	letter-spacing: 0; text-align: center; transform: translate(-50%, 15px); color: #777; }
 
 
+.pdfobject-container { display: flex; align-items: center; justify-content: center; width: 75%; height: 700px; border: 1px solid #ccc; }
 
 /* ---------------------------------
 10. FOOTER
