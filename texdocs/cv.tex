@@ -1,0 +1,637 @@
+\documentclass[line]{res}
+
+\usepackage{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{fontenc}
+\usepackage{enumitem}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=CadetBlue,
+  filecolor=CadetBlue,
+  urlcolor=CadetBlue,
+}
+
+\geometry{
+  a4paper,
+  total={210mm,297mm},
+  left=15mm,
+  right=15mm,
+  top=15mm,
+  bottom=15mm,
+  bindingoffset=0mm
+}
+\setlist{nolistsep,left=1em}
+\newsectionwidth{0in}
+
+\begin{document}
+
+\name{{\huge Abraham Gonzalez}}
+\address{\href{https://abejgonzalez.github.io}{https://abejgonzalez.github.io} $|$ \href{mailto:abe.gonzalez@berkeley.edu}{abe.gonzalez@berkeley.edu}}
+
+\begin{resume}
+
+\vspace{-6mm}
+
+\section{\Large{Education}}
+\phantomsection
+\label{sec:education}
+\vspace{2mm}
+
+\textbf{University of California, Berkeley} \hfill Expected July 2025
+\\
+\textit{Ph.D. in Electrical Engineering and Computer Sciences}, advised by Krste Asanovi\'c, GPA: 3.96/4.0
+\\
+Dissertation Title: ``End-to-end Heterogeneous System Design for Hyperscale Big Data Processing''
+
+\textbf{The University of Texas at Austin} \hfill August 2014 - May 2018
+\\
+\textit{B.S. in Electrical and Computer Engineering}, GPA: 3.98/4.0
+
+\section{\Large{Job Experience}}
+\phantomsection
+\label{sec:jobs}
+\vspace{2mm}
+
+\textbf{Graduate Student Researcher} \hfill August 2018 - Present
+\\
+University of California, Berkeley | Berkeley, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Advised by Professor Emeritus and Professor of the Graduate School Krste Asanovi\'c.
+\item Ph.D. candidate and \href{https://adept.eecs.berkeley.edu/}{ADEPT}/\href{https://slice.eecs.berkeley.edu/}{SLICE lab} member researching hyperscale cloud architectures, accelerator scheduling, and hardware design methodologies.
+\item Co-lead of the \hyperref[sec:hyperscale-soc]{Hyperscale system-on-chip (SoC) project} focused on hyperscale hardware/software co-design.
+\item Co-lead of the widely used \hyperref[sec:chipyard]{Chipyard SoC framework}, which has been used in over 20 tape-outs at multiple academic institutions and has been used (not only cited) by over 150 peer-reviewed publications from first authors at over 65 companies and academic institutions.
+\item Co-lead of the award-winning \hyperref[sec:firesim]{FireSim FPGA-accelerated simulation platform}, which has been used (not only cited) in over 60 peer-reviewed publications from first authors at over 25 companies and academic institutions.
+\item Led the tape-out and bring-up of the first \hyperref[sec:chipyard]{Chipyard} test chip, a 106.1 GOPS/W heterogeneous multi-core multi-accelerator SoC made in Intel 22FFL.
+\item Developer of the \hyperref[sec:boom]{Berkeley Out-of-Order Machine (BOOM)}, the first open-source Linux-booting synthesizable and parameterizable RV64GC RISC-V out-of-order core.
+\item \hyperref[sec:pubs]{Published research} and \hyperref[sec:beagle]{tape-outs} at top conferences including ISCA, DAC, IEEE MICRO, and ESSCIRC.
+\item Lead organizer for \hyperref[sec:tutorialsworkshops]{over 10 tutorials and workshops} with over 200 unique attendees at top conferences.
+\item Mentored over 10 graduate and undergraduate students in hyperscale systems and hardware methodology research.
+\end{itemize}
+
+\vspace{-2mm}
+
+\textbf{Student Researcher Intern} \hfill June 2021 - July 2024
+\\
+Google | Sunnyvale, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Student researcher working with Parthasarathy Ranganathan (Vice President and Engineering Fellow).
+%\item Researched data analytics and RPC acceleration under Partha Ranganathan and Jichuan Chang.
+\item Collaborated with the \href{https://techsysinfra.google/research/}{SystemsResearch@Google (SRG)} and Systems Infrastructure Performance teams.
+\item Researched data processing and remote procedure call (RPC) optimizations as part of the \hyperref[sec:hyperscale-soc]{Hyperscale SoC project}.
+\item Published research on \hyperref[sec:iscapaper]{hyperscale big data processing characterization at ISCA '23}.
+\item Open-sourced \href{https://github.com/google/fleetbench/tree/cd20746b68b307b148a761c676d6400f2541082d/fleetbench/rpc}{HyperRPCBench}, a novel representative RPC benchmark suite, with the \href{https://github.com/google/fleetbench}{Fleetbench} team.
+\end{itemize}
+
+\vspace{-2mm}
+
+\textbf{Silicon Engineering Group Intern} \hfill June 2020 - August 2020
+\\
+Apple | Cupertino, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Engineering intern working with Si-En Chang (Distinguished Engineer).
+\item Developed computer architecture tooling for CPU verification.
+\end{itemize}
+
+\vspace{-2mm}
+
+\textbf{Scalable Performance CPU Development Group Intern} \hfill May 2018 - August 2018
+\\
+Intel | Austin, TX
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Worked on debugging tools for the microcontroller integration team with senior engineers.
+\item Setup novel workflows and infrastructure between the firmware and microcontroller integration teams for agility.
+\end{itemize}
+
+\vspace{-2mm}
+
+\textbf{Office Shared Graphics Explore Intern} \hfill May 2016 - August 2016
+\\
+Microsoft | Redmond, WA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Developed the proof-of-concept ``Sketchy Lines'' feature (now publicly available) in the Office suite using C++.
+\item Investigated and coordinated new feature sets with senior engineers, program managers, and customers.
+\item Created a synchronized network of Arduino microcontrollers using HTTP requests for the OneWeek hackathon.
+\end{itemize}
+
+\vspace{-2mm}
+
+\textbf{UIM Driver Intern} \hfill May 2015 - August 2015
+\\
+Qualcomm | San Diego, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Designed a software framework for smartcard (UIM) interaction in C++/CLI and C++ with senior engineers.
+\item Integrated designed framework into a .NET application managing smartcards via CCID by utilizing APDU transmission/logging; file system viewing; file data parsing/manipulation; and smartcard reader management.
+\item Created gesture controlled car with Particle Core for the Hack-Mobile hackathon.
+\end{itemize}
+
+\pagebreak
+
+\section{\Large{Graduate Research Experience}}
+\phantomsection
+\label{sec:gradexp}
+\vspace{2mm}
+
+\label{sec:hyperscale-soc}
+\textbf{Hyperscale SoC Project} \hfill April 2019 - Present
+\\
+University of California, Berkeley | Berkeley, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Co-lead of the Hyperscale SoC project focused on developing next-generation hyperscale computing.
+\item Focused on hyperscale big data processing platforms and RPC accelerator scheduling research.
+\item Combines the use of \hyperref[sec:chipyard]{Chipyard} and \hyperref[sec:firesim]{FireSim} to explore new hardware/software co-design opportunities for big data processing platforms.
+\item Characterized three big data processing platforms (Spanner, BigTable, and BigQuery), running live-traffic at Google for the first time and \hyperref[sec:iscapaper]{published the work at ISCA '23}.
+\item Collaborated with the \href{https://github.com/google/fleetbench}{Fleetbench} benchmarking team to open-source \href{https://github.com/google/fleetbench/tree/cd20746b68b307b148a761c676d6400f2541082d/fleetbench/rpc}{HyperRPCBench}, a novel representative synthetic RPC benchmark suite including payloads and a traffic driver.
+\item Built and correlated Python and C++ models for accelerator runtimes against x86 proof-of-concepts and \hyperref[sec:chipyard]{Chipyard}-based RTL running custom and \href{https://github.com/google/fleetbench/tree/cd20746b68b307b148a761c676d6400f2541082d/fleetbench/rpc}{HyperRPCBench} payloads.
+\end{itemize}
+
+\vspace{-2mm}
+
+\label{sec:chipyard}
+\textbf{Chipyard: Agile RISC-V Hardware SoC Design Framework} \hfill April 2019 - Present
+\\
+University of California, Berkeley | Berkeley, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Co-lead and core developer of \href{https://github.com/ucb-bar/chipyard}{Chipyard}, an integrated agile RISC-V SoC design, simulation, and implementation environment for specialized compute systems.
+\item Architected the main integration, build flow, and repository structure.
+\item Added support for multiple IPs including \hyperref[sec:boom]{BOOM}, \href{https://github.com/chipsalliance/rocket-chip-blocks}{SiFive blocks}, \href{https://github.com/openhwgroup/cva6}{Ariane (CVA6)}, \href{https://nvdla.org/}{NVDLA}, and more.
+\item Integrated the initial tape-out bring-up tether widget, FPGA bring-up flow, and software utilities.
+\item Added the initial CI/CD flow including torture/fuzz and distributed testing.
+\item Used in \href{https://scholar.google.com/scholar?cites=4549882523608568335&as_sdt=2005&sciodt=0,5&hl=en}{over 20 tape-outs} at multiple academic institutions (such as Stanford and Technical University of Dresden).
+\item Used (not only cited) in \href{https://scholar.google.com/scholar?cites=4549882523608568335&as_sdt=2005&sciodt=0,5&hl=en}{over 150 peer-reviewed publications} (spanning computer architecture, artificial intelligence (AI), systems, and more) from first authors at over 65 companies and academic institutions.
+\item \href{https://github.com/ucb-bar/chipyard}{Over 650 unique forks and 1.8K stars on GitHub}.
+\end{itemize}
+
+\vspace{-2mm}
+
+\label{sec:firesim}
+\textbf{FireSim: FPGA-accelerated Hardware Simulation Platform} \hfill August 2018 - Present
+\\
+University of California, Berkeley | Berkeley, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Co-lead and core developer of \href{https://fires.im/}{FireSim}, an FPGA-accelerated full-system hardware simulation platform with on-premises and cloud flexibility.
+\item Added FPGA-accelerated co-simulation with \href{https://github.com/chipsalliance/dromajo}{Dromajo}, enabling bug discovery billions of cycles into simulation.
+\item Re-architected the command-line interface and Python machine manager to support configurable custom clusters.
+\item Enabled larger simulations through local FPGA support with \href{https://www.amd.com/en/products/accelerators/alveo/u250/a-u250-a64g-pq-g.html}{U250}/\href{https://docs.amd.com/r/en-US/ds963-u280}{U280}/\href{https://www.amd.com/en/products/accelerators/alveo/u200/a-u200-a64g-pq-g.html}{U200} Xilinx UltraScale+ FPGAs and the \href{https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vitis.html}{Xilinx Vitis Unified Software Platform}.
+\item Expanded the initial CI/CD flow to include FPGA bitstream builds and simulations across local and cloud FPGAs.
+\item Used (not only cited) in \href{https://fires.im/publications/#userpapers}{over 60 peer-reviewed publications} from first authors at over 25 companies and academic institutions in addition to being used in the development of commercial chips.
+\item Used as a \href{https://fires.im/workshop-2023/}{standard host platform for DARPA and IARPA programs}, including in \href{https://fett.darpa.mil/}{DARPA's first ever bug bounty program (FETT)} to host novel security-augmented hardware designs on the internet for attack by 100s of white-hat hackers across the globe.
+\item \href{https://github.com/firesim/firesim}{Over 200 unique forks and 900 stars on GitHub}.
+\end{itemize}
+
+\vspace{-2mm}
+
+\label{sec:beagle}
+\textbf{BEAGLE: Heterogeneous Multi-Core Multi-Accelerator Tape-out\\in Intel 22FFL} \hfill April 2019 - September 2021
+\\
+University of California, Berkeley | Berkeley, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Led tape-out of the first \hyperref[sec:chipyard]{Chipyard} test chip, a 106.1 GOPS/W heterogeneous multi-core multi-accelerator test chip made in Intel 22FFL.
+\item Coordinated interaction between UC Berkeley and Intel during physical design process.
+\item Streamlined \hyperref[sec:chipyard]{Chipyard} vendor IP integration and custom boot flow.
+\item Led bring-up including open-sourcing newly created FPGA-based bring-up collateral.
+\item Led pre-silicon testing with large-scale \hyperref[sec:firesim]{FireSim} simulations and automated \hyperref[sec:chipyard]{Chipyard} regressions.
+\item \hyperref[sec:beaglepaper]{Published working test chip at ESSCIRC '21}.
+\item SoC Components: \href{https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-17.pdf}{In-order Rocket core} with a \href{https://dl.acm.org/doi/10.1109/DAC18074.2021.9586216}{Gemmini systolic array accelerator}, \hyperref[sec:boom]{out-of-order BOOM core} with a \href{https://people.eecs.berkeley.edu/~krste/papers/EECS-2015-263.pdf}{Hwacha vector accelerator} and runtime configurable non-speculative mode, \href{https://github.com/chipsalliance/rocket-chip-inclusive-cache}{shared L2}, independent clock domains, and \href{https://github.com/chipsalliance/rocket-chip-blocks}{multiple IOs (GPIO, SPI, I2C, UART, SerDes)}.
+\end{itemize}
+
+\vspace{-2mm}
+
+\label{sec:boom}
+\textbf{BOOM: The Berkeley Out-of-Order Machine} \hfill August 2018 - April 2021
+\\
+University of California, Berkeley | Berkeley, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Developer of BOOM, the first open-source synthesizable Linux-booting RV64GC RISC-V out-of-order core.
+\item Added the initial CI/CD flow including torture/fuzz and distributed testing.
+\item Modified the RTL to support instantiation with other core IPs in additional to various quality-of-life improvements.
+\item \hyperref[sec:spectrerepl]{Open-sourced and replicated Spectre speculative attacks on the core}.
+\end{itemize}
+
+\pagebreak
+
+\section{\Large{Skills}}
+\phantomsection
+\label{sec:skills}
+\vspace{2mm}
+
+\textbf{Programming Languages} |
+\begin{itemize}
+\item \textit{Highly Proficient:}
+\begin{itemize}
+\item Traditional: Scala, C, C++, Python, RISC-V Assembly, Bash, C++/CLI
+\item Hardware Description/Construction Languages (HDL/HCLs): Chisel, SystemVerilog, Verilog
+\item Scripting and build systems: Make, CMake, Bazel, TCL
+\item Machine Learning: TensorFlow, PyTorch
+\item Other: SQL
+\end{itemize}
+\item \textit{Proficient:}
+\begin{itemize}
+\item Traditional: ARM Assembly, LC-3 Assembly, Android Java, C\#
+\item Hardware Description/Construction Languages (HDL/HCLs): VHDL
+\end{itemize}
+\end{itemize}
+\vspace{-4mm}
+\textbf{Tooling} | Tiva Launchpad, Arduino, SparkFun, Particle Core microcontrollers
+\\
+\textbf{Embedded Systems} | Tiva Launchpad, Arduino, SparkFun, Particle Core microcontrollers
+\\
+\textbf{Electrical Equipment} | Soldering, oscilloscopes, logic analyzers, multimeters
+\\
+\textbf{Other} | Git, MapReduce, AWS, Google Cloud, Xilinx Virtex/UltraScale+ FPGAs, Cadence EDA tooling
+
+\section{\Large{Conference, Journal, Workshop, and Technical Report Publications}}
+\phantomsection
+\label{sec:pubs}
+\vspace{2mm}
+
+\textbf{Summary} (\underline{underline} $=$ first author or equal contribution)
+\\
+ISCA '24, \underline{ISCA '23}, \underline{ESSCIRC '21}, ISPASS '21, \underline{DAC '20 (invited)}, \underline{IEEE Micro 2020.4}, CARRV '20,\\
+\underline{UC Berkeley Technical Report '20}, \underline{CARRV '19}
+\vspace{-1mm}
+
+\textbf{FireAxe: Partitioned FPGA-Accelerated Simulation of Large-Scale RTL Designs} \hfill ISCA '24
+\vspace{0.7mm}
+\\
+\href{https://ieeexplore.ieee.org/document/10609699}{Joonho Whangbo, Edwin Lim, Chengyi Lux Zhang, Kevin Anderson, \underline{Abraham Gonzalez}, Raghav Gupta, Nivedha Krishnakumar, Sagar Karandikar, Borivoje Nikoli\'c, Yakun Sophia Shao, Krste Asanovi\'c, ``FireAxe: Partitioned FPGA-Accelerated Simulation of Large-Scale RTL Designs'', \textit{2024 ACM/IEEE 51st Annual International Symposium on Computer Architecture (ISCA)}, Buenos Aires, Argentina, June 2024.}
+\\
+Received all available artifact badges: Artifacts Available, Artifacts Evaluated: Functional, and Results Reproduced
+\vspace{-1mm}
+
+\label{sec:iscapaper}
+\textbf{Profiling Hyperscale Big Data Processing} \hfill ISCA '23
+\vspace{0.7mm}
+\\
+\href{https://dl.acm.org/doi/10.1145/3579371.3589082}{\underline{Abraham Gonzalez}, Aasheesh Kolli, Samira Khan, Sihang Liu, Vidushi Dadu, Sagar Karandikar, Jichuan Chang, Krste Asanovi\'c, Parthasarathy Ranganathan, ``Profiling Hyperscale Big Data Processing'', \textit{2023 ACM/IEEE 51st Annual International Symposium on Computer Architecture (ISCA)}, Orlando, FL, USA, June 2023.}
+\\
+Received all available artifact badges: Artifacts Available, Artifacts Evaluated: Functional, and Results Reproduced
+\vspace{-1mm}
+
+\label{sec:beaglepaper}
+\textbf{A 16mm\textsuperscript{2} 106.1 GOPS/W Heterogeneous RISC-V Multi-Core Multi-Accelerator SoC in\\Low-Power 22nm FinFET} \hfill ESSCIRC '21
+\vspace{0.7mm}
+\\
+\href{https://ieeexplore.ieee.org/abstract/document/9567768}{\underline{Abraham Gonzalez}, Jerry Zhao, Ben Korpan, Hasan Genc, Colin Schmidt, John Wright, Ayan Biswas, Alon Amid, Farhana Sheikh, Anton Sorokin, Sirisha Kale, Mani Yalamanchi, Ramya Yarlagadda, Mark Flannigan, Larry Abramowitz, Elad Alon, Yakun Sophia Shao, Krste Asanovi\'c, and Bora Nikoli\'c, ``A 16mm\textsuperscript{2} 106.1 GOPS/W Heterogeneous RISC-V Multi-Core Multi-Accelerator SoC in Low-Power 22nm FinFET'', \textit{In proceedings of 2021 IEEE European Solid State Circuits Conference (ESSCIRC 2021)}, Virtual Event, September 2021.}
+\vspace{-1mm}
+
+\textbf{COBRA: A Framework for Evaluating Compositions of Hardware Branch Predictors} \hfill ISPASS '21
+\vspace{0.7mm}
+\\
+\href{https://ieeexplore.ieee.org/document/9408173}{Jerry Zhao, \underline{Abraham Gonzalez}, Alon Amid, Sagar Karandikar, and Krste Asanovi\'c, ``COBRA: A Framework for Evaluating Compositions of Hardware Branch Predictors'', \textit{In proceedings of 2021 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS 2021)}, Virtual Event, March 2021.}
+\vspace{-1mm}
+
+\textbf{Invited: Chipyard - An Integrated SoC Research and Implementation Environment} \hfill DAC '20 (invited)
+\vspace{0.7mm}
+\\
+\href{https://dl.acm.org/doi/10.5555/3437539.3437682}{Alon Amid, David Biancolin, \underline{Abraham Gonzalez}, Daniel Grubb, Sagar Karandikar, Harrison Liew, Albert Magyar, Howard Mao, Albert Ou, Nathan Pemberton, Paul Rigge, Colin Schmidt, John Wright, Jerry Zhao, Yakun Sophia Shao, Krste Asanovi\'c, and Bora Nikoli\'c, ``Invited: Chipyard - An Integrated SoC Research and Implementation Environment'', \textit{In proceedings of 57th ACM/IEEE Design Automation Conference (DAC 2020)}, San Francisco, CA, USA, July 2020.}
+\vspace{-1mm}
+
+\textbf{Chipyard: Integrated Design, Simulation, and Implementation Framework\\for Custom SoCs} \hfill IEEE Micro 2020.4
+\vspace{0.7mm}
+\\
+\href{https://dl.acm.org/doi/10.1109/MM.2020.2996616}{Alon Amid, David Biancolin, \underline{Abraham Gonzalez}, Daniel Grubb, Sagar Karandikar, Harrison Liew, Albert Magyar, Howard Mao, Albert Ou, Nathan Pemberton, Paul Rigge, Colin Schmidt, John Wright, Jerry Zhao, Yakun Sophia Shao, Krste Asanovi\'c, and Bora Nikoli\'c, ``Chipyard: Integrated Design, Simulation, and Implementation Framework for Custom SoCs'', \textit{IEEE Micro}, vol. 40, no. 4, pp. 10-21, (Special Issue on Agile and Open-Source Hardware), July-August 2020.}
+\vspace{-1mm}
+
+\textbf{SonicBOOM: The 3rd Generation Berkeley Out-of-Order Machine} \hfill CARRV '20
+\vspace{0.7mm}
+\\
+\href{https://carrv.github.io/2020/papers/CARRV2020_paper_15_Zhao.pdf}{Jerry Zhao, Ben Korpan, \underline{Abraham Gonzalez}, and Krste Asanovi\'c, ``SonicBOOM: The 3rd Generation Berkeley Out-of-Order Machine'', \textit{4th Workshop on Computer Architecture Research with RISC-V (CARRV 2020)}, Virtual Event, May 2020.}
+\vspace{-1mm}
+
+\textbf{A Chipyard Comparison of NVDLA and Gemmini} \hfill UC Berkeley Technical Report '20
+\vspace{0.7mm}
+\\
+\href{https://abejgonzalez.github.io/documents/nvdla_v_gemmini.pdf}{\underline{Abraham Gonzalez}, and Charles Hong, ``A Chipyard Comparison of NVDLA and Gemmini'', \textit{EECS Department}, University of California, Berkeley, May 2020.}
+\vspace{-1mm}
+
+\label{sec:spectrerepl}
+\textbf{Replicating and Mitigating Spectre Attacks on an Open Source RISC-V Microarchitecture} \hfill CARRV '19
+\vspace{0.7mm}
+\\
+\href{https://carrv.github.io/2019/papers/carrv2019_paper_5.pdf}{\underline{Abraham Gonzalez}, Ben Korpan, Jerry Zhao, Ed Younis, and Krste Asanovi\'c, ``Replicating and Mitigating Spectre Attacks on an Open Source RISC-V Microarchitecture'', \textit{3rd Workshop on Computer Architecture Research with RISC-V (CARRV 2019)}, Phoenix, AZ, USA, June 2019.}
+
+\section{\Large{Selected External Presentations}}
+\phantomsection
+\label{sec:talks}
+\vspace{2mm}
+
+\textbf{End-to-end Heterogeneous System Design for Hyperscale Big Data Processing} \hfill April 2025
+\\
+Google | Sunnyvale, CA
+\vspace{-1mm}
+
+\textbf{End-to-end Heterogeneous System Design for Hyperscale Big Data Processing} \hfill April 2025
+\\
+Apple | Cupertino, CA
+\vspace{-1mm}
+
+\textbf{\href{https://youtu.be/pYyv8BJ5n68?si=EY9vUUn3IQko-ZE3}{Chipyard: An Open-Source RISC-V SoC Design Framework}} \hfill April 2023
+\\
+Latch-Up Conference | Santa Barbara, CA
+\vspace{-1mm}
+
+\textbf{FireSim: Fast and Effortless FPGA-accelerated Hardware Simulation with On-Prem and Cloud\\Flexibility} \hfill March 2023
+\\
+Apple | Cupertino, CA
+\vspace{-1mm}
+
+\textbf{A 16mm\textsuperscript{2} 106.1 GOPS/W Heterogeneous RISC-V Multi-Core Multi-Accelerator SoC in\\Low-Power 22nm FinFET} \hfill September 2021
+\\
+ESSCIRC | Virtual
+\vspace{-1mm}
+
+\textbf{Chipyard: Integrated SoC Design, Simulation, Implementation Environment} \hfill July 2020
+\\
+Apple | Virtual
+\vspace{-1mm}
+
+\textbf{\href{https://www.youtube.com/watch?v=MaSZuHhOE24}{End-to-End Architecture Exploration with RISC-V SoC Generators, FPGA-Accelerated\\Simulation and Agile Test Chips}} \hfill December 2019
+\\
+RISC-V Summit | San Jose, CA
+\vspace{-1mm}
+
+\textbf{\href{https://carrv.github.io/2019/}{Replicating and Mitigating Spectre Attacks on an Open Source RISC-V Microarchitecture}} \hfill June 2019
+\\
+CARRV | Phoenix, AZ
+\vspace{-1mm}
+
+\textbf{\href{https://youtu.be/WNf3Dq9wflQ?si=jQcMmZWhbsHAUfTB}{The Berkeley Out-of-Order Machine: An Open-Source Synthesizable High-Performance RISC-V\\Processor}} \hfill May 2019
+\\
+Latch-Up Conference | Portland, OR
+\vspace{-1mm}
+
+\textbf{Enhancing an Out-of-Order Processor Simulator for Cloud Applications} \hfill May 2018
+\\
+Capstone Presentation at The University of Texas at Austin | Austin, TX
+\vspace{-1mm}
+
+\textbf{A Machine Learning Approach to Modeling Electroplating Process Variations in\\IC Redistribution Layers} \hfill November 2017
+\\
+SHPE National Conference | Kansas City, MO
+
+\section{\Large{Tutorials and Workshops Organized}}
+\phantomsection
+\label{sec:tutorialsworkshops}
+\vspace{2mm}
+
+\textbf{Full-day Hands-on Tutorials on FireSim and Chipyard}
+\\
+\href{https://fires.im/micro-2024-tutorial/}{MICRO '24}, \href{https://fires.im/isca-2023-tutorial/}{ISCA}/\href{https://fires.im/asplos-2023-tutorial/}{ASPLOS}/\href{https://fires.im/hpca-2023-tutorial/}{HPCA} '23, \href{https://fires.im/isca-2022-tutorial/}{ISCA}/\href{https://fires.im/micro-2022-tutorial/}{MICRO}/\href{https://fires.im/asplos-2022-tutorial/}{ASPLOS} '22, \href{https://fires.im/isca-2021-tutorial/}{ISCA}/\href{https://fires.im/micro-2021-tutorial/}{MICRO} '21, \href{https://fires.im/micro-2019-tutorial/}{MICRO '19}
+\vspace{0.5mm}
+\\
+Lead organizer presenting a series of full-day, hands-on tutorials on the \hyperref[sec:chipyard]{Chipyard SoC framework} and the \hyperref[sec:firesim]{FireSim FPGA-accelerated simulation platform} at ten recent conferences, supported by the NSF-CCRI program, AWS, and Xilinx.
+Over 200 unique attendees were provided free AWS EC2 instances to customize RTL and boot large-scale simulations (e.g., booting Linux, running AI workloads, etc.) using \hyperref[sec:chipyard]{Chipyard}, \hyperref[sec:firesim]{FireSim}, and cloud FPGAs.
+
+\pagebreak
+
+\textbf{First FireSim/Chipyard User and Developer Workshop}
+\\
+\href{https://fires.im/workshop-2023/}{ASPLOS '23}
+\vspace{0.5mm}
+\\
+Organizer of a full-day workshop consisting of 10 presentations from external users of the \hyperref[sec:chipyard]{Chipyard SoC framework} and the \hyperref[sec:firesim]{FireSim FPGA-accelerated simulation platform}, discussions on feature development, and discussions on open-source governance of the platforms.
+
+\section{\Large{Undergraduate Research Experience}}
+\phantomsection
+\label{sec:ugradexp}
+\vspace{2mm}
+
+\textbf{Enhancing an Out-of-Order Processor Simulator for Cloud Applications} \hfill January 2018 - May 2018
+\\
+The University of Texas at Austin | Austin, TX
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Undergraduate researcher working under \href{https://www.ece.utexas.edu/people/faculty/mattan-erez}{Professor Mattan Erez} for the UT Austin capstone design course.
+\item Designed and developed new software data-structures for emulating simultaneous multithreading on ZSim.
+\item Built hardware scheduling policies ensuring quality of service for latency critical tasks in an out-of-order pipeline.
+\item Presented a poster of final results at The University of Texas Electrical Engineering Spring Open House.
+\end{itemize}
+
+\textbf{Microsystems Technology Lab Intern} \hfill June 2017 - August 2017
+\\
+Massachusetts Institute of Technology | Cambridge, MA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Selected as one of 37 \href{https://oge.mit.edu/msrp/}{MIT Summer Research Program (MSRP) participants}.
+\item Researched variations in electroplating growth in redistribution layers under \href{https://boning.mit.edu/}{Professor Duane Boning}.
+\item Designed various neural networks and machine learning models for electroplating growth using Tensorflow.
+\item Awarded 2\textsuperscript{nd} best research poster at the SHPE National Conference '17 for research presented.
+\end{itemize}
+
+\textbf{Printing Electronics Research Assistant} \hfill January 2017 - June 2017
+\\
+The University of Texas at Austin | Austin, TX
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Researched and fabricated printed antennas under the supervision of \href{https://www.ece.utexas.edu/people/faculty/ray-chen}{Professor Ray Chen}.
+\item Printed and tested fixed phase array antennas on Kapton with various nano-particle inks.
+\end{itemize}
+
+\textbf{QCA Research Assistant} \hfill May 2015 - August 2016
+\\
+The University of Texas at Austin | Austin, TX
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Researched and designed quantum cellular automata (QCA) circuitry with \href{https://www.ece.utexas.edu/people/faculty/earl-swartzlander}{Professor Earl Swartzlander}.
+\item Optimized QCA implementations of the carry-lookahead and conditional sum adders through QCA Designer.
+\end{itemize}
+
+% not undergraduate, so remove
+% \textbf{Electronic Cooling Research Lab Assistant} \hfill June 2012
+% \\
+% Villanova University | Villanova, PA
+% \\
+% \vspace{-3mm}
+% \begin{itemize}
+% \item Participated in constructing and remodeling a cooling test mechanism under \href{https://www1.villanova.edu/university/engineering/about-us/faculty-staff-directory/biodetail.html?mail=alfonso.ortega@villanova.edu&xsl=bio_long}{Professor Alfonso Ortega}.
+% \item Collaborated with Ph.D. and masters students on techniques to cool spherical devices within a wind tunnel.
+% \end{itemize}
+
+\section{\Large{Teaching Experience}}
+\phantomsection
+\label{sec:teaching}
+\vspace{2mm}
+
+\textbf{Teaching Assistant - \href{https://inst.eecs.berkeley.edu/~cs152/sp23/}{CS152/252A: Computer Architecture and Engineering}} \hfill Spring 2023
+\\
+University of California, Berkeley | Berkeley, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Taught one discussion section per week in addition to developing new homework, tests, and labs.
+\end{itemize}
+
+\textbf{Head Teaching Assistant - \href{https://inst.eecs.berkeley.edu/~ee290-2/sp21}{EE290-2: Hardware for Machine Learning}} \hfill Spring 2021
+\\
+University of California, Berkeley | Berkeley, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Taught one discussion section per week in addition to developing new homework, tests, and labs.
+\end{itemize}
+
+\textbf{Teaching Assistant - EE460N/382N.1: Computer Architecture} \hfill Spring 2018
+\\
+The University of Texas at Austin | Austin, TX
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Taught two discussion sections per week in addition to developing new homework, tests, and labs.
+\end{itemize}
+
+\textbf{Tutor - Equal Opportunity in Engineering} \hfill Spring 2018
+\\
+The University of Texas at Austin | Austin, TX
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Assisted struggling students in electrical and computer engineering courses through tailored guides and lessons.
+\end{itemize}
+
+
+\section{\Large{Professional Leadership and Extracurriculars}}
+\phantomsection
+\label{sec:profleadershipmembership}
+\vspace{2mm}
+
+{\sl \textbf{Member}} | Latinx Association of Graduate Students in Engineering and Science \hfill Fall 2018 - Present
+\\
+{\sl \textbf{Member}} | Diversifying Future Leadership in the Professoriate (FLIP) Alliance \hfill Fall 2018 - Present
+\\
+{\sl \textbf{Vice President}} | Eta Kappa Nu Electrical Engineering Honor Society \hfill Fall 2017 - Spring 2018
+\\
+{\sl \textbf{Corresponding Secretary}} | Eta Kappa Nu Electrical Engineering Honor Society \hfill Summer 2017 - Fall 2017
+\\
+{\sl \textbf{Member}} | Eta Kappa Nu Electrical Engineering Honor Society \hfill Spring 2016 - Present
+\\
+{\sl \textbf{Member}} | Institute of Electrical and Electronic Engineers \hfill Fall 2014 - Present
+\\
+{\sl \textbf{Member}} | Society of Hispanic Professional Engineers (SHPE) \hfill Fall 2014 - Present
+\\
+{\sl \textbf{Pi Tutor}} | Equal Opportunity in Engineering (EOE) \hfill Fall 2015, Fall 2017
+\\
+{\sl \textbf{Academic Director}} | Society of Hispanic Professional Engineers \hfill Summer 2016 - Summer 2017
+\\
+{\sl \textbf{Organizing Committee Member}} | 3 Day Startup Austin \hfill Fall 2014 - Fall 2015
+\\
+{\sl \textbf{Participant}} | 3 Day Startup Austin \hfill Fall 2014
+
+\section{\Large{Honors, Awards, and Selections}}
+\phantomsection
+\label{sec:honors}
+\vspace{2mm}
+
+{\sl \textbf{DARPA Riser}} | DARPA \hfill Fall 2022
+\\
+{\sl \textbf{Analog Devices Outstanding Engineer Award}} | University of Califonia, Berkeley \hfill Spring 2020
+\\
+{\sl \textbf{EECS Excellence Award}} | University of Califonia, Berkeley \hfill Fall 2018
+\\
+{\sl \textbf{Berkeley Fellowship for Graduate Study}} | University of Califonia, Berkeley \hfill Fall 2018
+\\
+{\sl \textbf{GEM Fellowship Recipient}} | GEM \hfill Spring 2018
+\\
+{\sl \textbf{Honorable Mention}} | NSF GRFP \hfill Spring 2018
+\\
+{\sl \textbf{Highest Honors}} | The University of Texas at Austin  \hfill Spring 2018
+\\
+{\sl \textbf{Distinguished College Scholar}} | The University of Texas at Austin  \hfill Spring 2018
+\\
+{\sl \textbf{Academic Leader Hall of Fame Inductee}} | Equal Opportunity in Engineering Program  \hfill Spring 2018
+\\
+{\sl \textbf{Roberto Rocca Scholarship Recipient}} | Tenaris \hfill Fall 2017
+\\
+{\sl \textbf{Second-Place Award Winner}} | SHPE National Conference Poster Competition  \hfill Fall 2017
+\\
+{\sl \textbf{Distinguished College Scholar}} | The University of Texas at Austin  \hfill Spring 2017
+\\
+{\sl \textbf{Victor L. Hand Scholarship Recipient}} | Victor L. Hand Endowed Scholarship Fund \hfill Fall 2016
+\\
+{\sl \textbf{College Scholar}} | The University of Texas at Austin \hfill Spring 2016
+\\
+{\sl \textbf{Diversity Scholarship Recipient}} | Texas Instruments \hfill Fall 2015
+\\
+{\sl \textbf{Freshman Academic Excellence Award Winner}} | EOE and SHPE \hfill Spring 2015
+\\
+{\sl \textbf{Qualcomm DECA Attendee - selected as 1 of 51 nationally}} | Qualcomm \hfill Spring 2015
+\\
+{\sl \textbf{LEAD Conference Attendee - selected as 1 of 30 nationally}} | LEAD \hfill Summer 2013
+
+\section{\Large{References}}
+\phantomsection
+\label{sec:refs}
+\vspace{2mm}
+
+{\large{Krste Asanovi\'c}}
+\\
+Professor Emeritus and Professor of the Graduate School
+\\
+University of California, Berkeley
+\\
+\href{mailto:krste@berkeley.edu}{krste@berkeley.edu}
+
+{\large{Parthasarathy Ranganathan}}
+\\
+Engineering Fellow and Vice President
+\\
+Google
+\\
+\href{mailto:parthas@google.com}{parthas@google.com}
+
+{\large{Bora Nikoli\'c}}
+\\
+National Semiconductor Distinguished Professor
+\\
+University of California, Berkeley
+\\
+\href{mailto:bora@eecs.berkeley.edu}{bora@eecs.berkeley.edu}
+
+{\large{Sophia Shao}}
+\\
+Associate Professor
+\\
+University of California, Berkeley
+\\
+\href{mailto:ysshao@berkeley.edu}{ysshao@berkeley.edu}
+
+{\large{Sagar Karandikar}}
+\\
+Assistant Professor
+\\
+University of California, Berkeley
+\\
+\href{mailto:sagark@eecs.berkeley.edu}{sagark@eecs.berkeley.edu}
+
+\end{resume}
+
+\end{document}

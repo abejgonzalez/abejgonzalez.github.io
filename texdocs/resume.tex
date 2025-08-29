@@ -1,0 +1,193 @@
+\documentclass[line]{res}
+
+\usepackage{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{fontenc}
+\usepackage{enumitem}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=CadetBlue,
+  filecolor=CadetBlue,
+  urlcolor=CadetBlue,
+}
+
+\geometry{
+  a4paper,
+  total={210mm,297mm},
+  left=15mm,
+  right=15mm,
+  top=13mm,
+  bottom=13mm,
+  bindingoffset=0mm
+}
+\setlist{nolistsep,left=1em}
+\newsectionwidth{0in}
+
+\begin{document}
+
+\name{{\huge Abraham Gonzalez}}
+\address{\href{https://abejgonzalez.github.io}{https://abejgonzalez.github.io} $|$ \href{mailto:abe.gonzalez@berkeley.edu}{abe.gonzalez@berkeley.edu}}
+
+\begin{resume}
+
+\vspace{-8mm}
+
+\section{\Large{Education}}
+\phantomsection
+\label{sec:education}
+\vspace{1mm}
+
+\textbf{University of California, Berkeley} \hfill Expected July 2025
+\\
+\textit{Ph.D. in Electrical Engineering and Computer Sciences}, advised by Krste Asanovi\'c, GPA: 3.96/4.0
+\\
+Dissertation Title: ``End-to-end Heterogeneous System Design for Hyperscale Big Data Processing''
+
+\vspace{-3mm}
+
+\textbf{The University of Texas at Austin} \hfill August 2014 - May 2018
+\\
+\textit{B.S. in Electrical and Computer Engineering}, GPA: 3.98/4.0
+
+\vspace{-3mm}
+
+\section{\Large{Work Experience}}
+\phantomsection
+\label{sec:jobs}
+\vspace{1mm}
+
+\textbf{Graduate Student Researcher} \hfill August 2018 - Present
+\\
+University of California, Berkeley | Berkeley, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Advised by Professor Emeritus and Professor of the Graduate School Krste Asanovi\'c.
+\item Ph.D. candidate and \href{https://adept.eecs.berkeley.edu/}{ADEPT}/\href{https://slice.eecs.berkeley.edu/}{SLICE lab} member researching hyperscale cloud architectures, accelerator scheduling, and hardware design methodologies.
+\item Co-lead of the Hyperscale system-on-chip (SoC) project focused on hyperscale hardware/software co-design.
+\item Co-lead of the \href{https://github.com/ucb-bar/chipyard}{Chipyard SoC framework} \href{https://scholar.google.com/scholar?cites=4549882523608568335&as_sdt=2005&sciodt=0,5&hl=en}{(used in 20+ tape-outs and 150+ pubs. @ 65+ companies/universities)}.
+\item Co-lead of the award-winning \href{https://fires.im/}{FireSim FPGA-accelerated simulator} \href{https://fires.im/publications/#userpapers}{(used in 60+ pubs. @ 25+ companies/universities)}.
+\item Developer of the \href{https://boom-core.org/}{Berkeley Out-of-Order Machine (BOOM)}, the first open-source RISC-V out-of-order core.
+\item Led the tape-out/bring-up of the first \hyperref[sec:chipyard]{Chipyard} test chip, a \href{https://ieeexplore.ieee.org/abstract/document/9567768}{106.1 GOPS/W heterogeneous SoC in Intel 22FFL}.
+\item \href{https://scholar.google.com/citations?user=dsAQJ4cAAAAJ&hl=en}{Published research and tape-outs} at top conferences including ISCA, DAC, IEEE MICRO, and ESSCIRC.
+\item Lead organizer for \href{https://fires.im/blog/}{10+ tutorials and workshops} with 200+ unique attendees at top conferences.
+\end{itemize}
+
+\vspace{-3mm}
+
+\textbf{Student Researcher Intern} \hfill June 2021 - July 2024
+\\
+Google | Sunnyvale, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Student researcher working with Parthasarathy Ranganathan (Vice President and Engineering Fellow).
+%\item Researched data analytics and RPC acceleration under Partha Ranganathan and Jichuan Chang.
+\item Collaborated with the \href{https://techsysinfra.google/research/}{SystemsResearch@Google (SRG)} and Systems Infrastructure Performance teams.
+\item Researched data processing and remote procedure call (RPC) optimizations as part of the \hyperref[sec:hyperscale-soc]{Hyperscale SoC project}.
+\item Published first of its kind research on \href{https://dl.acm.org/doi/10.1145/3579371.3589082}{hyperscale big data processing characterization at ISCA '23}.
+\item Open-sourced \href{https://github.com/google/fleetbench/tree/cd20746b68b307b148a761c676d6400f2541082d/fleetbench/rpc}{HyperRPCBench}, a novel representative RPC benchmark suite, with the \href{https://github.com/google/fleetbench}{Fleetbench} team.
+\end{itemize}
+
+\vspace{-3mm}
+
+\textbf{Silicon Engineering Group Intern} \hfill June 2020 - August 2020
+\\
+Apple | Cupertino, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Engineering intern working with Si-En Chang (Distinguished Engineer).
+\item Developed computer architecture tooling for CPU verification.
+\end{itemize}
+
+\vspace{-3mm}
+
+\textbf{Scalable Performance CPU Development Group Intern} \hfill May 2018 - August 2018
+\\
+Intel | Austin, TX
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Worked on debugging tools for the microcontroller integration team with senior engineers.
+\item Setup novel workflows and infrastructure between the firmware and microcontroller integration teams for agility.
+\end{itemize}
+
+\vspace{-3mm}
+
+\textbf{Office Shared Graphics Explore Intern} \hfill May 2016 - August 2016
+\\
+Microsoft | Redmond, WA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Developed the proof-of-concept ``Sketchy Lines'' feature (now publicly available) in the Office suite using C++.
+\item Investigated and coordinated new feature sets with senior engineers, program managers, and customers.
+\end{itemize}
+
+\vspace{-3mm}
+
+\textbf{UIM Driver Intern} \hfill May 2015 - August 2015
+\\
+Qualcomm | San Diego, CA
+\\
+\vspace{-3mm}
+\begin{itemize}
+\item Designed a software framework for smartcard (UIM) interaction in C++/CLI and C++ with senior engineers.
+\item Integrated designed framework into a .NET application managing smartcards via CCID.
+\end{itemize}
+
+\vspace{-3mm}
+
+\section{\Large{Skills}}
+\phantomsection
+\label{sec:skills}
+\vspace{1mm}
+
+\begin{multicols}{2}
+\textbf{Programming Languages}
+\\
+Scala, C/C++, Python, Chisel, SQL, \{System\}Verilog, RISC-V, Bash, Make, Bazel, TCL, TensorFlow, PyTorch
+
+\columnbreak
+
+\textbf{Other}
+\\
+Git, MapReduce, AWS, Google Cloud, Xilinx Virtex/UltraScale+ FPGAs, Cadence EDA tooling
+
+\end{multicols}
+
+\vspace{-7mm}
+
+% \section{Professional Leadership and Membership}
+% Member of LAGSES (Fall 2018-Pres.)\\
+% Vice President (Spr. 2018), Corres. Secretary (Fall 2017), and member (Spr. 2016-Pres.) of HKN Honor Society\\
+% %Member of HKN Honor Society (Spr. 2016-Now)\\
+% %Equal Opportunity in Engineering (EOE) Pi tutor (Fall 2015, Fall 2017)\\
+% Academic Director (Fall 2016-Fall 2017), and member (Fall 2014-Pres.) of Society of Hispanic Professional Engineers\\
+% %3DS Austin Organizer Committee member (Fall 2014-Fall 2015) and participant (Fall 2014)\\
+
+\section{\Large{Honors, Awards, and Selections}}
+\phantomsection
+\label{sec:honors}
+\vspace{2mm}
+
+\textbf{UC Berkeley:} DARPA Riser (Fa'22), Analog Devices Outstanding Designer (Sp'20), Berkeley Fellowship (Fa'18), EECS Excellence Award (Fa'18), GEM Fellowship (Sp'18), NSF GRFP Honorable Mention (Sp'18) \\
+\textbf{UT Austin and prior:} Highest Honors (Sp'18),
+Distinguished College Scholar (Sp'17/18),
+College Scholar (Sp'16),
+Roberto Rocca Scholarship (Fa'17),
+Victor L. Hand Scholarship (Fa'16),
+TI Diversity Scholarship (Fa'15),
+2\textsuperscript{nd} Best Poster SHPE National Conference (Fa'17),
+Qualcomm DECA Attendee (1/51 selected nationally) (Sp'15),
+EOE/SHPE Freshman Academic Excellence Winner (Sp'15)
+
+\end{resume}
+
+\end{document}
