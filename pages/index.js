@@ -46,7 +46,7 @@ const Home = () => (
             Abraham Gonzalez
           </Heading>
           <Text color={useColorModeValue('teal.500', 'teal.200')} fontWeight="semibold">
-            Software Engineer @ Google
+            Incoming Software Engineer @ Google
           </Text>
         </Box>
         <Box
