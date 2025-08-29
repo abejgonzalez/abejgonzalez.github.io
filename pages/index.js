@@ -45,7 +45,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Abraham Gonzalez
           </Heading>
-          <Text color="teal.500" fontWeight="semibold">
+          <Text color={useColorModeValue('teal.500', 'teal.200')} fontWeight="semibold">
             Software Engineer @ Google
           </Text>
         </Box>
@@ -149,7 +149,7 @@ const Home = () => (
                <Link as={NextLink} href="https://ieeexplore.ieee.org/document/10609699" passHref target="_blank">FireAxe: Partitioned FPGA-Accelerated Simulation of Large-Scale RTL Designs</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">ISCA &apos;24</Text>
+               <Text color={useColorModeValue('red.500', 'red.200')} lineHeight="tall" fontWeight="semibold">ISCA &apos;24</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -162,8 +162,9 @@ const Home = () => (
              <Text fontWeight="semibold" flex="1" pr={4} lineHeight="tall">
                <Link as={NextLink} href="https://dl.acm.org/doi/10.1145/3579371.3589082" passHref target="_blank">Profiling Hyperscale Big Data Processing</Link>
              </Text>
+
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">ISCA &apos;23</Text>
+               <Text color={useColorModeValue('red.500', 'red.200')} lineHeight="tall" fontWeight="semibold">ISCA &apos;23</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -177,7 +178,7 @@ const Home = () => (
                <Link as={NextLink} href="https://ieeexplore.ieee.org/abstract/document/9567768" passHref target="_blank">A 16mm&#178; 106.1 GOPS/W Heterogeneous RISC-V Multi-Core Multi-Accelerator SoC in Low-Power 22nm FinFET</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">ESSCIRC &apos;21</Text>
+               <Text color={useColorModeValue('red.500', 'red.200')} lineHeight="tall"  fontWeight="semibold">ESSCIRC &apos;21</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -191,7 +192,7 @@ const Home = () => (
                <Link as={NextLink} href="https://ieeexplore.ieee.org/document/9408173" passHref target="_blank">COBRA: A Framework for Evaluating Compositions of Hardware Branch Predictors</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">ISPASS &apos;21</Text>
+               <Text color={useColorModeValue('red.500', 'red.200')} lineHeight="tall"  fontWeight="semibold">ISPASS &apos;21</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -205,7 +206,7 @@ const Home = () => (
                <Link as={NextLink} href="https://dl.acm.org/doi/10.5555/3437539.3437682" passHref target="_blank">Invited: Chipyard - An Integrated SoC Research and Implementation Environment</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">DAC &apos;20 (Invited)</Text>
+               <Text color={useColorModeValue('red.500', 'red.200')} lineHeight="tall" fontWeight="semibold">DAC &apos;20 (Invited)</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -219,7 +220,7 @@ const Home = () => (
                <Link as={NextLink} href="https://dl.acm.org/doi/10.1109/MM.2020.2996616" passHref target="_blank">Chipyard: Integrated Design, Simulation, and Implementation Framework for Custom SoCs</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">IEEE Micro 2020.4</Text>
+               <Text color={useColorModeValue('red.500', 'red.200')} lineHeight="tall" fontWeight="semibold">IEEE Micro 2020.4</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -233,7 +234,7 @@ const Home = () => (
                <Link as={NextLink} href="https://carrv.github.io/2020/papers/CARRV2020_paper_15_Zhao.pdf" passHref target="_blank">SonicBOOM: The 3rd Generation Berkeley Out-of-Order Machine</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">CARRV &apos;20</Text>
+               <Text color={useColorModeValue('red.500', 'red.200')} lineHeight="tall" fontWeight="semibold">CARRV &apos;20</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -247,7 +248,7 @@ const Home = () => (
                <Link as={NextLink} href="https://abejgonzalez.github.io/documents/nvdla_v_gemmini.pdf" passHref target="_blank">A Chipyard Comparison of NVDLA and Gemmini</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">UC Berkeley Technical Report &apos;20</Text>
+               <Text color={useColorModeValue('red.500', 'red.200')} lineHeight="tall" fontWeight="semibold">UC Berkeley Technical Report &apos;20</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -261,7 +262,7 @@ const Home = () => (
                <Link as={NextLink} href="https://carrv.github.io/2019/papers/carrv2019_paper_5.pdf" passHref target="_blank">Replicating and Mitigating Spectre Attacks on an Open Source RISC-V Microarchitecture</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">CARRV &apos;19</Text>
+               <Text color={useColorModeValue('red.500', 'red.200')} lineHeight="tall" fontWeight="semibold">CARRV &apos;19</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -282,7 +283,7 @@ const Home = () => (
         </Text>
       </Flex>
 
-      <Text fontSize="sm" color="blue.500" fontWeight="semibold" mb={2}>
+      <Text fontSize="sm" color={useColorModeValue("blue.500", "blue.200")} fontWeight="semibold" mb={2}>
         BIG-DATA PROCESSING • REMOTE PROCEDURE CALLS • MODELING • OPEN-SOURCE
       </Text>
       <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
@@ -305,10 +306,10 @@ const Home = () => (
           Chipyard: Agile RISC-V Hardware SoC Design Framework
         </Text>
         <Link href="https://github.com/ucb-bar/chipyard" target="_blank">
-          <IoLogoGithub size="24" color="#333" />
+          <IoLogoGithub size="24" color={useColorModeValue('#202023', '#f0e7db')} />
         </Link>
       </Flex>
-      <Text fontSize="sm" color="blue.500" fontWeight="semibold" mb={2}>
+      <Text fontSize="sm" color={useColorModeValue("blue.500", "blue.200")} fontWeight="semibold" mb={2}>
         AGILE HARDWARE • SOC DESIGN • OPEN-SOURCE
       </Text>
       <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
@@ -334,10 +335,10 @@ const Home = () => (
           FireSim: FPGA-accelerated Hardware Simulation Platform
         </Text>
         <Link href="https://github.com/firesim/firesim" target="_blank">
-          <IoLogoGithub size="24" color="#333" />
+          <IoLogoGithub size="24" color={useColorModeValue('#202023', '#f0e7db')} />
         </Link>
       </Flex>
-      <Text fontSize="sm" color="blue.500" fontWeight="semibold" mb={2}>
+      <Text fontSize="sm" color={useColorModeValue("blue.500", "blue.200")} fontWeight="semibold" mb={2}>
         HARDWARE SIMULATION • FPGA • OPEN-SOURCE
       </Text>
       <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
@@ -366,7 +367,7 @@ const Home = () => (
           BEAGLE: Heterogeneous Multi-Core Multi-Accelerator Tape-out
         </Text>
       </Flex>
-      <Text fontSize="sm" color="blue.500" fontWeight="semibold" mb={2}>
+      <Text fontSize="sm" color={useColorModeValue("blue.500", "blue.200")} fontWeight="semibold" mb={2}>
         MULTI-ACCELERATOR • MACHINE LEARNING • VECTOR • OPEN-SOURCE
       </Text>
       <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
@@ -395,10 +396,10 @@ const Home = () => (
           BOOM: The Berkeley Out-of-Order Machine
         </Text>
         <Link href="https://github.com/riscv-boom/riscv-boom" target="_blank">
-          <IoLogoGithub size="24" color="#333" />
+          <IoLogoGithub size="24" color={useColorModeValue('#202023', '#f0e7db')} />
         </Link>
       </Flex>
-      <Text fontSize="sm" color="blue.500" fontWeight="semibold" mb={2}>
+      <Text fontSize="sm" color={useColorModeValue("blue.500", "blue.200")} fontWeight="semibold" mb={2}>
         HIGH-PERFORMANCE • GENERAL PURPOSE • OPEN-SOURCE
       </Text>
       <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
