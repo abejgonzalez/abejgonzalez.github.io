@@ -1,7 +1,5 @@
 import Link from 'next/link'
-import { Text, useColorModeValue, Icon } from '@chakra-ui/react'
-import { TbAtomOff } from "react-icons/tb"
-import { motion, AnimatePresence } from 'framer-motion'
+import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
@@ -16,13 +14,6 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  // Define colors for light/dark mode
-  const iconColor = useColorModeValue('teal.500', 'teal.300');
-  const textColor = useColorModeValue('gray.800', 'whiteAlpha.900');
-
-  // Get current color mode for animation key
-  const colorMode = useColorModeValue('light', 'dark');
-
   return (
     <Link href="/" scroll={false}>
       <LogoBox>

@@ -4,8 +4,6 @@ import {
   Container,
   Heading,
   Box,
-  List,
-  ListItem,
   Button,
   Text,
   Flex,
@@ -13,7 +11,6 @@ import {
 } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoLinkedin, IoLogoGithub, IoSchool } from 'react-icons/io5'
@@ -129,12 +126,12 @@ const Home = () => (
         </Paragraph>
         <Paragraph>
           I graduated with a Ph.D. in <Link as={NextLink} href="https://eecs.berkeley.edu/" passHref target="_blank">Electrical Engineering and Computer Sciences</Link> at the <Link as={NextLink} href="https://www.berkeley.edu/" passHref target="_blank">University of California, Berkeley</Link> in Summer 2025 as part of the <Link as={NextLink} href="https://slice.eecs.berkeley.edu/" passHref target="_blank">SLICE</Link> lab (formerly the <Link as={NextLink} href="https://adept.eecs.berkeley.edu/" passHref target="_blank">ADEPT</Link> lab) under <Link as={NextLink} href="http://people.eecs.berkeley.edu/~krste/" passHref target="_blank">Professor Emeritus and Professor of the Graduate School Krste Asanovi&#263;</Link> and <Link as={NextLink} href="https://www2.eecs.berkeley.edu/Faculty/Homepages/nikolic.html" passHref target="_blank">Professor Borivoje Nikoli&#263;</Link>.
-	  As part of my dissertation work, I've worked at Google with <Link as={NextLink} href="https://www.parthasarathys.com/" passHref target="_blank">Engineering Fellow/VP Parthasarathy Ranganathan</Link> and <Link as={NextLink} href="https://www.linkedin.com/in/jichuan/" passHref target="_blank">Engineering Director Jichuan Chang</Link>.
+	  As part of my dissertation work, I&apos;ve worked at Google with <Link as={NextLink} href="https://www.parthasarathys.com/" passHref target="_blank">Engineering Fellow/VP Parthasarathy Ranganathan</Link> and <Link as={NextLink} href="https://www.linkedin.com/in/jichuan/" passHref target="_blank">Engineering Director Jichuan Chang</Link>.
           My dissertation focused on hyperscale cloud data center architectures, accelerator scheduling, data analytics, and agile hardware design methodology.
-	  I've co-led various widely used open-source projects, including the <Link as={NextLink} href="https://github.com/ucb-bar/chipyard" passHref target="_blank">Chipyard SoC framework</Link>, the <Link as={NextLink} href="https://fires.im/" passHref target="_blank">FireSim FPGA-accelerated simulation platform</Link>, and the <Link as={NextLink} href="https://boom-core.org/" passHref target="_blank">Berkeley Out-of-Order Machine (BOOM)</Link>.
+	  I&apos;ve co-led various widely used open-source projects, including the <Link as={NextLink} href="https://github.com/ucb-bar/chipyard" passHref target="_blank">Chipyard SoC framework</Link>, the <Link as={NextLink} href="https://fires.im/" passHref target="_blank">FireSim FPGA-accelerated simulation platform</Link>, and the <Link as={NextLink} href="https://boom-core.org/" passHref target="_blank">Berkeley Out-of-Order Machine (BOOM)</Link>.
           As of Summer 2025, both Chipyard and FireSim, combined, have been used in over 20 tape-outs and over 150 peer-reviewed publications from over 65 companies and universities.
 	  My work has been published in various venues such as ISCA, DAC, IEEE Micro, and ESSCIRC.
-	  I've also led over 10 workshops and tutorials with over 200 unique attendees at top conferences such as ISCA, MICRO, ASPLOS, and HPCA.
+	  I&apos;ve also led over 10 workshops and tutorials with over 200 unique attendees at top conferences such as ISCA, MICRO, ASPLOS, and HPCA.
         </Paragraph>
         <Paragraph>
 	  Prior to Berkeley, I received my B.S. in <Link as={NextLink} href="https://www.ece.utexas.edu/" passHref target="_blank">Electrical and Computer Engineering</Link> from the <Link as={NextLink} href="https://www.utexas.edu/" passHref target="_blank">University of Texas at Austin</Link>.
@@ -152,7 +149,7 @@ const Home = () => (
                <Link as={NextLink} href="https://ieeexplore.ieee.org/document/10609699" passHref target="_blank">FireAxe: Partitioned FPGA-Accelerated Simulation of Large-Scale RTL Designs</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">ISCA '24</Text>
+               <Text fontSize="sm" color="red.500" fontWeight="semibold">ISCA &apos;24</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -166,7 +163,7 @@ const Home = () => (
                <Link as={NextLink} href="https://dl.acm.org/doi/10.1145/3579371.3589082" passHref target="_blank">Profiling Hyperscale Big Data Processing</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">ISCA '23</Text>
+               <Text fontSize="sm" color="red.500" fontWeight="semibold">ISCA &apos;23</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -180,7 +177,7 @@ const Home = () => (
                <Link as={NextLink} href="https://ieeexplore.ieee.org/abstract/document/9567768" passHref target="_blank">A 16mm&#178; 106.1 GOPS/W Heterogeneous RISC-V Multi-Core Multi-Accelerator SoC in Low-Power 22nm FinFET</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">ESSCIRC '21</Text>
+               <Text fontSize="sm" color="red.500" fontWeight="semibold">ESSCIRC &apos;21</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -194,7 +191,7 @@ const Home = () => (
                <Link as={NextLink} href="https://ieeexplore.ieee.org/document/9408173" passHref target="_blank">COBRA: A Framework for Evaluating Compositions of Hardware Branch Predictors</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">ISPASS '21</Text>
+               <Text fontSize="sm" color="red.500" fontWeight="semibold">ISPASS &apos;21</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -208,7 +205,7 @@ const Home = () => (
                <Link as={NextLink} href="https://dl.acm.org/doi/10.5555/3437539.3437682" passHref target="_blank">Invited: Chipyard - An Integrated SoC Research and Implementation Environment</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">DAC '20 (Invited)</Text>
+               <Text fontSize="sm" color="red.500" fontWeight="semibold">DAC &apos;20 (Invited)</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -236,7 +233,7 @@ const Home = () => (
                <Link as={NextLink} href="https://carrv.github.io/2020/papers/CARRV2020_paper_15_Zhao.pdf" passHref target="_blank">SonicBOOM: The 3rd Generation Berkeley Out-of-Order Machine</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">CARRV '20</Text>
+               <Text fontSize="sm" color="red.500" fontWeight="semibold">CARRV &apos;20</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -250,7 +247,7 @@ const Home = () => (
                <Link as={NextLink} href="https://abejgonzalez.github.io/documents/nvdla_v_gemmini.pdf" passHref target="_blank">A Chipyard Comparison of NVDLA and Gemmini</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">UC Berkeley Technical Report '20</Text>
+               <Text fontSize="sm" color="red.500" fontWeight="semibold">UC Berkeley Technical Report &apos;20</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -264,7 +261,7 @@ const Home = () => (
                <Link as={NextLink} href="https://carrv.github.io/2019/papers/carrv2019_paper_5.pdf" passHref target="_blank">Replicating and Mitigating Spectre Attacks on an Open Source RISC-V Microarchitecture</Link>
              </Text>
              <Flex align="center" gap={2}>
-               <Text fontSize="sm" color="red.500" fontWeight="semibold">CARRV '19</Text>
+               <Text fontSize="sm" color="red.500" fontWeight="semibold">CARRV &apos;19</Text>
              </Flex>
            </Flex>
            <Text fontSize="sm">
@@ -292,7 +289,7 @@ const Home = () => (
         • Co-lead of the project with a focus on co-design of big data processing platforms and RPC accelerator scheduling.
       </Text>
       <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
-        • Characterized three big data processing platforms, Spanner, BigTable, and BigQuery, running live-traffic at Google for the first time and <Link as={NextLink} href="https://dl.acm.org/doi/10.1145/3579371.3589082" passHref target="_blank">published the work at ISCA '23</Link>.
+        • Characterized three big data processing platforms, Spanner, BigTable, and BigQuery, running live-traffic at Google for the first time and <Link as={NextLink} href="https://dl.acm.org/doi/10.1145/3579371.3589082" passHref target="_blank">published the work at ISCA &apos;23</Link>.
       </Text>
       <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
         • Open-sourced the <Link href="https://github.com/google/fleetbench/tree/cd20746b68b307b148a761c676d6400f2541082d/fleetbench/rpc" target="_blank">HyperRPCBench</Link> benchmark suite, a novel representative synthetic RPC suite in collaboration with the <Link href="https://github.com/google/fleetbench" target="_blank">Fleetbench</Link> benchmarking team.
@@ -356,7 +353,7 @@ const Home = () => (
         • Expanded the initial CI/CD flow to include FPGA bitstream builds and simulations across local and cloud FPGAs.
       </Text>
       <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
-        • Used as a <Link href="https://fires.im/workshop-2023/" target="_blank">standard host platform for DARPA and IARPA programs</Link>, including in <Link href="https://fett.darpa.mil/" target="_blank">DARPA's first ever bug bounty program (FETT)</Link> to host novel security-augmented hardware designs on the internet for attack by 100s of white-hat hackers globally.
+        • Used as a <Link href="https://fires.im/workshop-2023/" target="_blank">standard host platform for DARPA and IARPA programs</Link>, including in <Link href="https://fett.darpa.mil/" target="_blank">DARPA&apos;s first ever bug bounty program (FETT)</Link> to host novel security-augmented hardware designs on the internet for attack by 100s of white-hat hackers globally.
       </Text>
       <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
         • As of Summer 2025, the project has been used (not only cited) in <Link href="https://fires.im/publications/#userpapers" target="_blank">over 60 peer-reviewed publications</Link> from first authors at over 25 companies and academic institutions in addition to being used in the development of commercial chips. Additionally, it has <Link href="https://github.com/firesim/firesim" target="_blank">over 200 unique forks and 900 stars on GitHub</Link>.
@@ -373,7 +370,7 @@ const Home = () => (
         MULTI-ACCELERATOR • MACHINE LEARNING • VECTOR • OPEN-SOURCE
       </Text>
       <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
-        • Led tape-out of the first <Link as={NextLink} href="https://github.com/ucb-bar/chipyard" passHref target="_blank">Chipyard</Link> test chip, a 106.1 GOPS/W heterogeneous multi-core multi-accelerator test chip made in Intel 22FFL and <Link as={NextLink} href="https://ieeexplore.ieee.org/abstract/document/9567768" passHref target="_blank">published at ESSCIRC '21</Link>.
+        • Led tape-out of the first <Link as={NextLink} href="https://github.com/ucb-bar/chipyard" passHref target="_blank">Chipyard</Link> test chip, a 106.1 GOPS/W heterogeneous multi-core multi-accelerator test chip made in Intel 22FFL and <Link as={NextLink} href="https://ieeexplore.ieee.org/abstract/document/9567768" passHref target="_blank">published at ESSCIRC &apos;21</Link>.
       </Text>
       <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
         • Coordinated interaction between UC Berkeley and Intel during physical design process.
