@@ -46,7 +46,7 @@ const Home = () => (
             Abraham Gonzalez
           </Heading>
           <Text color={useColorModeValue('teal.500', 'teal.200')} fontWeight="semibold">
-            Incoming Software Engineer @ Google
+            Software Engineer @ Google
           </Text>
         </Box>
         <Box
@@ -104,7 +104,7 @@ const Home = () => (
                 Google Scholar
               </Button>
             </Link>
-            <Link href="mailto:abe.gonzalez@berkeley.edu">
+            <Link href="mailto:abegonzalez@google.com">
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -121,8 +121,8 @@ const Home = () => (
           Bio
         </Heading>
         <Paragraph>
-          I am an incoming Software Engineer at <Link as={NextLink} href="https://research.google/" passHref target="_blank">Google</Link> working in the <Link as={NextLink} href="https://techsysinfra.google/research/" passHref target="_blank">AI and Systems Research</Link> group co-led by <Link as={NextLink} href="https://techsysinfra.google/research/srg-staff/david-culler/" passHref target="_blank">David Culler</Link> and <Link as={NextLink} href="https://techsysinfra.google/research/srg-staff/hank-levy/" passHref target="_blank">Hank Levy</Link>.
-          The best way to reach me is at abe dot gonzalez at berkeley dot edu.
+          I am a Software Engineer at <Link as={NextLink} href="https://research.google/" passHref target="_blank">Google</Link> working in the <Link as={NextLink} href="https://techsysinfra.google/research/" passHref target="_blank">AI and Systems Research</Link> group co-led by <Link as={NextLink} href="https://techsysinfra.google/research/srg-staff/david-culler/" passHref target="_blank">David Culler</Link> and <Link as={NextLink} href="https://techsysinfra.google/research/srg-staff/hank-levy/" passHref target="_blank">Hank Levy</Link>.
+          The best way to reach me is at abe gonzalez at google dot com.
         </Paragraph>
         <Paragraph>
           I graduated with a Ph.D. in <Link as={NextLink} href="https://eecs.berkeley.edu/" passHref target="_blank">Electrical Engineering and Computer Sciences</Link> at the <Link as={NextLink} href="https://www.berkeley.edu/" passHref target="_blank">University of California, Berkeley</Link> in Summer 2025 as part of the <Link as={NextLink} href="https://slice.eecs.berkeley.edu/" passHref target="_blank">SLICE</Link> lab (formerly the <Link as={NextLink} href="https://adept.eecs.berkeley.edu/" passHref target="_blank">ADEPT</Link> lab) under <Link as={NextLink} href="http://people.eecs.berkeley.edu/~krste/" passHref target="_blank">Professor Emeritus and Professor of the Graduate School Krste Asanovi&#263;</Link> and <Link as={NextLink} href="https://www2.eecs.berkeley.edu/Faculty/Homepages/nikolic.html" passHref target="_blank">Professor Borivoje Nikoli&#263;</Link>.
