@@ -122,7 +122,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           I am a Software Engineer at <Link as={NextLink} href="https://research.google/" passHref target="_blank">Google</Link> working in the <Link as={NextLink} href="https://techsysinfra.google/research/" passHref target="_blank">AI and Systems Research</Link> group led by <Link as={NextLink} href="https://techsysinfra.google/research/srg-staff/hank-levy/" passHref target="_blank">Hank Levy</Link>.
-          The best way to reach me is at abe gonzalez at google dot com.
+          The best way to reach me is at abegonzalez at google dot com.
         </Paragraph>
         <Paragraph>
           I graduated with a Ph.D. in <Link as={NextLink} href="https://eecs.berkeley.edu/" passHref target="_blank">Electrical Engineering and Computer Sciences</Link> at the <Link as={NextLink} href="https://www.berkeley.edu/" passHref target="_blank">University of California, Berkeley</Link> in Summer 2025 as part of the <Link as={NextLink} href="https://slice.eecs.berkeley.edu/" passHref target="_blank">SLICE</Link> lab (formerly the <Link as={NextLink} href="https://adept.eecs.berkeley.edu/" passHref target="_blank">ADEPT</Link> lab) under <Link as={NextLink} href="http://people.eecs.berkeley.edu/~krste/" passHref target="_blank">Professor Emeritus and Professor of the Graduate School Krste Asanovi&#263;</Link> and <Link as={NextLink} href="https://www2.eecs.berkeley.edu/Faculty/Homepages/nikolic.html" passHref target="_blank">Professor Borivoje Nikoli&#263;</Link>.
