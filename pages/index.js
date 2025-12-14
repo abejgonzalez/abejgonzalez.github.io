@@ -121,7 +121,7 @@ const Home = () => (
           Bio
         </Heading>
         <Paragraph>
-          I am a Software Engineer at <Link as={NextLink} href="https://research.google/" passHref target="_blank">Google</Link> working in the <Link as={NextLink} href="https://techsysinfra.google/research/" passHref target="_blank">AI and Systems Research</Link> group co-led by <Link as={NextLink} href="https://techsysinfra.google/research/srg-staff/david-culler/" passHref target="_blank">David Culler</Link> and <Link as={NextLink} href="https://techsysinfra.google/research/srg-staff/hank-levy/" passHref target="_blank">Hank Levy</Link>.
+          I am a Software Engineer at <Link as={NextLink} href="https://research.google/" passHref target="_blank">Google</Link> working in the <Link as={NextLink} href="https://techsysinfra.google/research/" passHref target="_blank">AI and Systems Research</Link> group led by <Link as={NextLink} href="https://techsysinfra.google/research/srg-staff/hank-levy/" passHref target="_blank">Hank Levy</Link>.
           The best way to reach me is at abe gonzalez at google dot com.
         </Paragraph>
         <Paragraph>
