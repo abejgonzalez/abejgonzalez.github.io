@@ -146,6 +146,20 @@ const Home = () => (
          <Box mb={4}>
           <Flex justify="space-between" align="flex-start" mb={2}>
              <Text fontWeight="semibold" flex="1" pr={4} lineHeight="tall">
+               <Link as={NextLink} href="https://arxiv.org/abs/2602.22425" passHref target="_blank">ArchAgent: Agentic AI-driven Computer Architecture Discovery</Link>
+             </Text>
+             <Flex align="center" gap={2}>
+               <Text color={useColorModeValue('red.500', 'red.200')} lineHeight="tall" fontWeight="semibold">arXiv &apos;26</Text>
+             </Flex>
+           </Flex>
+           <Text fontSize="sm">
+             Raghav Gupta, Akanksha Jain, <Text as="span" textDecoration="underline" fontWeight="semibold">Abraham Gonzalez</Text>, Alexander Novikov, Po-Sen Huang, Matej Balog, Marvin Eisenberger, Sergey Shirobokov, Ngân Vũ, Martin Dixon, Borivoje Nikoli&#263;, Parthasarathy Ranganathan, and Sagar Karandikar
+           </Text>
+         </Box>
+
+         <Box mb={4}>
+          <Flex justify="space-between" align="flex-start" mb={2}>
+             <Text fontWeight="semibold" flex="1" pr={4} lineHeight="tall">
                <Link as={NextLink} href="https://ieeexplore.ieee.org/document/10609699" passHref target="_blank">FireAxe: Partitioned FPGA-Accelerated Simulation of Large-Scale RTL Designs</Link>
              </Text>
              <Flex align="center" gap={2}>
