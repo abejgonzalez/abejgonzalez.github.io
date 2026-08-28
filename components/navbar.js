@@ -21,6 +21,9 @@ import ThemeToggleButton from './theme-toggle-button'
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
+  const externalProps =
+    target === '_blank' ? { rel: 'noopener noreferrer' } : {}
+
   return (
     <Link
       as={NextLink}
@@ -30,6 +33,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       bg={active ? 'grassTeal' : undefined}
       color={active ? '#202023' : inactiveColor}
       target={target}
+      {...externalProps}
       {...props}
     >
       {children}
@@ -93,16 +97,16 @@ const Navbar = props => {
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
-                aria-label="Options"
+                aria-label="Open navigation menu"
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
                   Home
                 </MenuItem>
-                <MenuItem as={Link} href="/documents/gonzalez-abraham-cv.pdf" target="_blank">
+                <MenuItem as={Link} href="/documents/gonzalez-abraham-cv.pdf" target="_blank" rel="noopener noreferrer">
                   Curriculum Vitae
                 </MenuItem>
-                <MenuItem as={Link} href="/documents/gonzalez-abraham-resume.pdf" target="_blank">
+                <MenuItem as={Link} href="/documents/gonzalez-abraham-resume.pdf" target="_blank" rel="noopener noreferrer">
                   Resume
                 </MenuItem>
               </MenuList>

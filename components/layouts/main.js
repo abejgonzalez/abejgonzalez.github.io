@@ -4,19 +4,28 @@ import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
 
 const Main = ({ children, router }) => {
+  const title = 'Abraham Gonzalez | Homepage'
+  const description =
+    'Abraham Gonzalez is a software engineer at Google working on AI-assisted computer architecture discovery methodologies for next-generation silicon.'
+
   return (
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Abraham's homepage" />
+        <meta name="description" content={description} />
         <meta name="author" content="Abraham Gonzalez" />
-        <meta name="author" content="tibogoss" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="/favicon-96x96.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta property="og:site_name" content="Abraham Gonzalez" />
-        <meta name="og:title" content="Abraham Gonzalez" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content="/images/gonzalez_abraham_2.jpg" />
         <meta property="og:type" content="website" />
-        <title>Abraham Gonzalez- Homepage</title>
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="/images/gonzalez_abraham_2.jpg" />
+        <title>{title}</title>
       </Head>
 
       <NavBar path={router.asPath} />

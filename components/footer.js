@@ -11,6 +11,7 @@ const Footer = () => {
         <Link
           href="https://www.craftz.dog/"
           target="_blank"
+          rel="noopener noreferrer"
           textDecoration="underline"
           _hover={{ opacity: 0.6 }}
         >
