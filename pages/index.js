@@ -122,6 +122,9 @@ const Home = () => (
         </Heading>
         <Paragraph>
           I am a Software Engineer at <Link as={NextLink} href="https://research.google/" passHref target="_blank">Google</Link> working in the <Link as={NextLink} href="https://techsysinfra.google/research/" passHref target="_blank">AI and Systems Research</Link> group led by <Link as={NextLink} href="https://techsysinfra.google/research/srg-staff/hank-levy/" passHref target="_blank">Hank Levy</Link>.
+          As part of my work at Google, I work on AI-assisted computer architecture discovery methodologies for next-generation silicon.
+          In addition, I participate in and collaborate with various industry/academic research projects in the space.
+          For more details, please refer to my publications and/or curriculum vitae.
           The best way to reach me is at abegonzalez at google dot com.
         </Paragraph>
         <Paragraph>
@@ -142,6 +145,20 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Publications
         </Heading>
+
+         <Box mb={4}>
+          <Flex justify="space-between" align="flex-start" mb={2}>
+             <Text fontWeight="semibold" flex="1" pr={4} lineHeight="tall">
+               <Link as={NextLink} href="https://arxiv.org/abs/2608.09874" passHref target="_blank">ArchAgent v2: A Case Study with the Data Prefetching Championship</Link>
+             </Text>
+             <Flex align="center" gap={2}>
+               <Text color={useColorModeValue('red.500', 'red.200')} lineHeight="tall" fontWeight="semibold">arXiv &apos;26</Text>
+             </Flex>
+           </Flex>
+           <Text fontSize="sm">
+             <Text as="span" textDecoration="underline" fontWeight="semibold">Abraham Gonzalez</Text>, Raghav Gupta, Akanksha Jain, Hanna Alam, Alexander Novikov, Po-Sen Huang, Matej Balog, Marvin Eisenberger, Sergey Shirobokov, Ngân Vũ, Hank Levy, Borivoje Nikoli&#263;, Sagar Karandikar, Martin Dixon, and Parthasarathy Ranganathan
+           </Text>
+         </Box>
 
          <Box mb={4}>
           <Flex justify="space-between" align="flex-start" mb={2}>
