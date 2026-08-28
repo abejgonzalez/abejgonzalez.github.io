@@ -139,7 +139,7 @@ const Home = () => (
         <Paragraph>
           I am a Software Engineer at <Link as={NextLink} href="https://research.google/" passHref {...externalLinkProps}>Google</Link> working in the <Link as={NextLink} href="https://techsysinfra.google/research/" passHref {...externalLinkProps}>AI and Systems Research</Link> group led by <Link as={NextLink} href="https://techsysinfra.google/research/srg-staff/hank-levy/" passHref {...externalLinkProps}>Hank Levy</Link>.
           As part of my work at Google, I develop AI-assisted methodologies for computer architecture discovery and hardware-software co-design for next-generation silicon.
-          In addition, I participate in and collaborate with various industry/academic research projects in the space.
+          In addition, I collaborate with university researchers and help guide academic projects in computer architecture and systems.
           For more details, please refer to my <Link href="#publications">publications</Link> and/or <Link href="/documents/gonzalez-abraham-cv.pdf" {...externalLinkProps}>curriculum vitae</Link>.
           The best way to reach me is at <Link href="mailto:abegonzalez@google.com">abegonzalez at google dot com</Link>.
         </Paragraph>
