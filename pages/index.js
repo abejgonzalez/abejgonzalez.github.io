@@ -146,7 +146,7 @@ const Home = () => (
         <Paragraph>
           I am a Software Engineer at <Link as={NextLink} href="https://research.google/" passHref {...externalLinkProps}>Google</Link> working in the <Link as={NextLink} href="https://techsysinfra.google/research/" passHref {...externalLinkProps}>AI and Systems Research</Link> group led by <Link as={NextLink} href="https://techsysinfra.google/research/srg-staff/hank-levy/" passHref {...externalLinkProps}>Hank Levy</Link>.
           As part of my work at <Link as={NextLink} href="https://research.google/" passHref {...externalLinkProps}>Google</Link>, I research AI-assisted methodologies for computer architecture discovery and hardware-software co-design for next-generation silicon.
-          While at <Link as={NextLink} href="https://research.google/" passHref {...externalLinkProps}>Google</Link>, my publicly facing research, done in collaboration with the <Link as={NextLink} href="https://www.berkeley.edu/" passHref {...externalLinkProps}>University of California, Berkeley</Link>, has been mentioned or featured across blogs (i.e., <Link as={NextLink} href="https://deepmind.google/blog/alphaevolve-impact/" passHref {...externalLinkProps}>Google DeepMind AlphaEvolve</Link>, <Link as={NextLink} href="https://antigravity.google/blog/teamwork-when-ai-becomes-a-research-partner" passHref {...externalLinkProps}>Google Antigravity</Link>, and <Link as={NextLink} href="https://www.sigarch.org/architecture-systems-are-changing-the-architects-role-in-the-era-of-agentic-co-design/" passHref {...externalLinkProps}>ACM SIGARCH</Link> blogs), podcasts (i.e., the <Link as={NextLink} href="https://comparchpodcast.podbean.com/e/ep-24-from-unicorns-to-centaurs-co-designing-computer-systems-for-the-ai-era-with-dr-partha-ranganathan-google/" passHref {...externalLinkProps}>Computer Architecture Podcast</Link>), keynotes (i.e., <Link as={NextLink} href="https://dl.acm.org/doi/10.1145/3779212.3795611" passHref {...externalLinkProps}>ASPLOS 2026 keynote by Engineering Fellow/VP Partha Ranganathan</Link>), and published work (i.e., <Link href="#publications">ArXiv publications</Link>).
+          While at <Link as={NextLink} href="https://research.google/" passHref {...externalLinkProps}>Google</Link>, my publicly facing research, done in collaboration with the <Link as={NextLink} href="https://www.berkeley.edu/" passHref {...externalLinkProps}>University of California, Berkeley</Link>, has been mentioned or featured across blogs (i.e., <Link as={NextLink} href="https://deepmind.google/blog/alphaevolve-impact/" passHref {...externalLinkProps}>Google DeepMind AlphaEvolve</Link>, <Link as={NextLink} href="https://antigravity.google/blog/teamwork-when-ai-becomes-a-research-partner" passHref {...externalLinkProps}>Google Antigravity</Link>, and <Link as={NextLink} href="https://www.sigarch.org/architecture-systems-are-changing-the-architects-role-in-the-era-of-agentic-co-design/" passHref {...externalLinkProps}>ACM SIGARCH</Link> blogs), podcasts (i.e., the <Link as={NextLink} href="https://comparchpodcast.podbean.com/e/ep-24-from-unicorns-to-centaurs-co-designing-computer-systems-for-the-ai-era-with-dr-partha-ranganathan-google/" passHref {...externalLinkProps}>Computer Architecture Podcast</Link>), keynotes (i.e., <Link as={NextLink} href="https://www.youtube.com/watch?v=3kJkux7t8VQ" passHref {...externalLinkProps}>OCP Global Summit 2026</Link> and <Link as={NextLink} href="https://dl.acm.org/doi/10.1145/3779212.3795611" passHref {...externalLinkProps}>ASPLOS 2026</Link> keynotes by Engineering Fellow and Vice President Partha Ranganathan), and published work (i.e., <Link href="#publications">ArXiv publications</Link>).
           In addition, I collaborate with university researchers, help mentor and guide academic projects, and organize workshops and hackathons (e.g., MICRO and ICLAD) across computer architecture, electronic design automation (EDA), and systems.
           For more details, please refer to my <Link href="#publications">publications</Link> and/or <Link href="/documents/gonzalez-abraham-cv.pdf" {...externalLinkProps}>curriculum vitae</Link>.
           The best way to reach me is at <Link href="mailto:abegonzalez@google.com">abegonzalez at google dot com</Link>, with <Link as={NextLink} href="https://www.linkedin.com/in/abraham-j-gonzalez/" passHref {...externalLinkProps}>LinkedIn</Link> checked irregularly.
@@ -169,6 +169,20 @@ const Home = () => (
         <Heading as="h3" variant="section-title" id="publications">
           Publications
         </Heading>
+
+         <Box mb={4}>
+          <Flex {...publicationRowProps}>
+             <Text {...publicationTitleProps}>
+               <Link as={NextLink} href="https://arxiv.org/abs/2610.17184" passHref {...externalLinkProps}>DuoDiscover: Scaling Autonomous Discovery Beyond the Evaluation Bottleneck</Link>
+             </Text>
+             <Flex align="center" gap={2}>
+               <Text color={useColorModeValue('red.500', 'red.200')} lineHeight="tall" fontWeight="semibold">arXiv &apos;26</Text>
+             </Flex>
+           </Flex>
+           <Text fontSize="sm">
+             Shubham Agarwal, Akshat Gupta, Mike Heddes, Dilara Soylu, Rui Meng, Patrick Tser Jern Kon, Jiefeng Chen, Mert Cemri, Shu Liu, <Text as="span" textDecoration="underline" fontWeight="semibold">Abe Gonzalez</Text>, Akanksha Jain, Bhavana Dalvi Mishra, Linfeng Song, Vilobh Meshram, Xiangru Tang, Jinsung Yoon, Aditya Parameswaran, Ion Stoica, Vahab Mirrokni, Burak Gokturk, Parthasarathy Ranganathan, Tomas Pfister, Nanyun Peng, and Chun-Liang Li
+           </Text>
+         </Box>
 
          <Box mb={4}>
           <Flex {...publicationRowProps}>
